@@ -6,6 +6,39 @@ html {
   box-sizing: inherit;
 }
 
-div {
-  background-color: aqua;
+body {
+  margin: 0;
+}
+
+p, li {
+  font-family: "Rajdhani", sans-serif;
+}
+
+header, footer {
+  background-color: #151e3f;
+  color: #FAFAFA;
+  font-family: "Bebas Neue";
+  text-align: center;
+  padding: 30px;
+}
+
+footer {
+  padding: 10px;
+}
+
+.title--big {
+  margin: 0;
+}
+
+.title {
+  font-family: "Bebas Neue";
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.my-photo {
+  border-radius: 50%;
+  border: 10px solid #FAFAFA;
 }/*# sourceMappingURL=style.css.map */

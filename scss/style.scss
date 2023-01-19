@@ -1,0 +1,46 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+$primary-color: #151e3f;
+$background-color: #e0e0ce;
+$secondary-color: #FAFAFA;
+$active-color: #3083dc;
+$font-base: 'Bebas Neue';
+$font-special: 'Rajdhani', sans-serif;
+
+body {
+    margin: 0;
+}
+
+
+p, li {
+    font-family: $font-special;
+}
+
+header, footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: $font-base;
+    text-align: center;
+    padding: 30px;
+}
+
+footer {
+    padding: 10px;
+}
+
+.title--big {
+    margin: 0;
+}
+.title {
+    font-family: $font-base;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+.my-photo {
+    border-radius: 50%;
+    border: 10px solid $secondary-color;
+}
