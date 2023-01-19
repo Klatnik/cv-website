@@ -24,7 +24,24 @@ header {
     color: $secondary-color;
     font-family: $font-base;
     text-align: center;
-    padding: 30px;
+    padding: 60px 0 0 0;
+}
+
+.wave__container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.wave__item {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+      
 }
 
 footer, .footer__contact {
