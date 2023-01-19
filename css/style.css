@@ -32,7 +32,32 @@ footer, .contact {
 
 .contact {
   background-color: #151e3f;
-  padding: 10px;
+  padding: 10px 0 20px 0;
+}
+
+.contact__icon {
+  margin: 5px;
+}
+.contact__icon .svg-icon {
+  width: 1em;
+  height: 1em;
+}
+.contact__icon .svg-icon path,
+.contact__icon .svg-icon polygon,
+.contact__icon .svg-icon rect {
+  fill: #4691f6;
+}
+.contact__icon .svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.contact__link {
+  text-decoration: none;
+}
+
+.contact__link:hover, .contact__link:active, .contact__link:focus {
+  fill: #3083dc;
 }
 
 .text__contact, .text__copyright {
