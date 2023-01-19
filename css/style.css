@@ -16,7 +16,7 @@ p, li {
   margin-bottom: 0;
 }
 
-header, footer {
+header {
   background-color: #151e3f;
   color: #FAFAFA;
   font-family: "Bebas Neue";
@@ -24,7 +24,23 @@ header, footer {
   padding: 30px;
 }
 
-footer {
+footer, .contact {
+  color: #FAFAFA;
+  text-align: center;
+  margin: 0;
+}
+
+.contact {
+  background-color: #151e3f;
+  padding: 10px;
+}
+
+.text__contact, .text__copyright {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  background-color: #0f162f;
   padding: 10px;
 }
 

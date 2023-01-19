@@ -19,7 +19,7 @@ p, li {
     margin-bottom: 0;
 }
 
-header, footer {
+header {
     background-color: $primary-color;
     color: $secondary-color;
     font-family: $font-base;
@@ -27,7 +27,24 @@ header, footer {
     padding: 30px;
 }
 
-footer {
+footer, .contact {
+    color: $secondary-color;
+    text-align: center;
+    margin: 0;
+}
+
+.contact {
+    background-color: $primary-color;
+    padding: 10px;
+    
+}
+
+.text__contact, .text__copyright {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    background-color: #0f162f;
     padding: 10px;
 }
 
