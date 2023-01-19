@@ -39,17 +39,16 @@ footer, .contact {
     
 }
 
-.contact__icon {
- 
-    // fill: $secondary-color;
+.contact__item {
     margin: 5px;
+    fill: $secondary-color;
 }
 
 .contact__link {
     text-decoration: none;
 }
 
-.contact__link:hover, .contact__link:active, .contact__link:focus {
+.contact__path:hover, .contact__path:active, .contact__path:focus {
     fill: $active-color;
 
 }

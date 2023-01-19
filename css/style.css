@@ -35,28 +35,16 @@ footer, .contact {
   padding: 10px 0 20px 0;
 }
 
-.contact__icon {
+.contact__item {
   margin: 5px;
-}
-.contact__icon .svg-icon {
-  width: 1em;
-  height: 1em;
-}
-.contact__icon .svg-icon path,
-.contact__icon .svg-icon polygon,
-.contact__icon .svg-icon rect {
-  fill: #4691f6;
-}
-.contact__icon .svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
+  fill: #FAFAFA;
 }
 
 .contact__link {
   text-decoration: none;
 }
 
-.contact__link:hover, .contact__link:active, .contact__link:focus {
+.contact__path:hover, .contact__path:active, .contact__path:focus {
   fill: #3083dc;
 }
 
