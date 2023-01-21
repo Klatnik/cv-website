@@ -122,102 +122,105 @@ footer, .footer__contact {
   border-radius: 20px;
 }
 
-.art {
-  position: relative;
-  height: 400px;
-}
-
-.items {
+.visuallyhidden {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.items .item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: all 300ms ease-in-out;
   z-index: -1;
+  right: 0;
   opacity: 0;
 }
 
-.item img {
+.container {
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 2em;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.card-carousel {
+  --card-width: 80%;
+  --card-max-width: 280px;
+  --card-height: 350px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter 0.3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2);
+  }
+}
+.card-carousel.smooth-return {
+  transition: all 0.2s ease;
+}
+
+.card-carousel .card {
+  background: whitesmoke;
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 1em;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.1);
+  transition: inherit;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+  filter: brightness(0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.highlight {
+  filter: brightness(1);
+}
+
+.card:nth-of-type(1) .image-container {
+  background-image: url("/images/drawing-dog.jpg");
+}
+
+.card:nth-of-type(2) .image-container {
+  background-image: url("/images/drawing-krishna.jpg");
+}
+
+.card:nth-of-type(3) .image-container {
+  background-image: url("/images/drawing-jesus.jpg");
+}
+
+.card:nth-of-type(4) .image-container {
+  background-image: url("/images/drawing-madonna.jpg");
+}
+
+.card:nth-of-type(5) .image-container {
+  background-image: url("/images/drawing-vincent.jpg");
+}
+
+.image-container {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.item.active {
-  opacity: 1;
-  z-index: 99;
-  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-}
-
-.item.prev {
-  z-index: 2;
-  opacity: 0.25;
-  transform: translate(-125%, -50%);
-}
-
-.item.next {
-  z-index: 2;
-  opacity: 0.25;
-  transform: translate(25%, -50%);
-}
-
-.items .button-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 275px;
-  z-index: 100;
-}
-
-.button-container .button {
-  color: #fff;
-  font-size: 32px;
-  cursor: pointer;
   position: relative;
-  opacity: 0.75;
-  transition: all 300ms ease-in-out;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2em;
+  padding: 1em;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.button-container .button:hover {
-  opacity: 1;
-}
-
-.button-container .button:before {
+.image-container::after {
   content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 50%;
-  z-index: -99;
-}
-
-.button-container .button:nth-child(1) {
-  float: left;
-}
-
-.button-container .button:nth-child(2) {
-  float: right;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
 }
 
 @media screen and (min-width: 640px) {
@@ -252,6 +255,9 @@ footer, .footer__contact {
   }
   .art {
     grid-column: 1/3;
+  }
+  .items {
+    position: relative;
   }
 }
 @media screen and (min-width: 1100px) {
